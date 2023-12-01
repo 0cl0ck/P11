@@ -1,13 +1,20 @@
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
-import "./App.css";
 import Banner from "./components/Banner.Jsx";
+import Main from "./components/Main.jsx";
+import LocationGrid from "./components/LocationGrid.jsx";
+import Footer from "./components/Footer.jsx";
+import "./App.css";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Banner />
+      <Main>
+        <Banner />
+        <LocationGrid />
+      </Main>
+      <Footer />
     </div>
   );
 }

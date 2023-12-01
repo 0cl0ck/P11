@@ -10,6 +10,9 @@
   place-items: center;
   color: white;
   background-image: url("https://unsplash.it/1920/1080");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
 }
 
 .banner::before {
