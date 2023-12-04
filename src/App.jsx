@@ -4,7 +4,7 @@ import Banner from "./components/Banner.Jsx";
 import Main from "./components/Main.jsx";
 import LocationGrid from "./components/LocationGrid.jsx";
 import Footer from "./components/Footer.jsx";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

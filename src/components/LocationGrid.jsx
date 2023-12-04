@@ -1,5 +1,5 @@
 import React from "react";
-import "./LocationGrid.css";
+import "./LocationGrid.scss";
 import Card from "./Card.jsx";
 
 function LocationGrid() {

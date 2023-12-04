@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import App from "./App.jsx";
-import "./index.css";
+import "./index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const BrowserRouter = createBrowserRouter([
