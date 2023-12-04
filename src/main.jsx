@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -21,7 +23,13 @@ const BrowserRouter = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <App />,
+    element: (
+      <>
+        <Navbar />
+        <h1>About</h1>,
+        <Footer />
+      </>
+    ),
   },
 ]);
 

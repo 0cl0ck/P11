@@ -9,23 +9,23 @@
   min-height: 200px;
   background-size: cover;
   position: relative;
-}
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 
-.card__subtitle {
-  color: white;
-  width: 50%;
-  position: absolute;
-}
+  &__subtitle {
+    color: white;
+    width: 50%;
+    position: absolute;
+  }
 
-.card__link {
-  text-decoration: none;
-  margin-inline-start: 1rem;
-  margin-block-end: 2rem;
-  color: inherit;
+  &__link {
+    text-decoration: none;
+    margin-inline-start: 1rem;
+    margin-block-end: 2rem;
+    color: inherit;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -9,16 +9,15 @@
   display: grid;
   place-items: center;
   color: white;
-  background-image: url("https://unsplash.it/1920/1080");
+  background-image: url("illustration-banniere.webp");
   background-position: center;
   background-size: cover;
   margin-bottom: 2rem;
-}
-
-.banner::before {
-  position: absolute;
-  border-radius: 2rem;
-  content: "";
-  inset: 0;
-  opacity: 0.5;
+  &::before {
+    position: absolute;
+    border-radius: 2rem;
+    content: "";
+    inset: 0;
+    opacity: 0.5;
+  }
 }
