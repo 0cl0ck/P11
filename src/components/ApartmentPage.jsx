@@ -40,8 +40,11 @@ function ApartmentPage() {
 
       <div className="apartment__details">
         <div className="apartment__details--description">
-          <p className="apartment__details--title">Description</p>
-          <p>
+          <div className="apartment__details--title">
+            <p>Description</p>
+            <i class="fa fa-solid fa-chevron-down"></i>
+          </div>
+          <p className="apartment__details--content">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
             nisi consectetur minima, provident debitis reiciendis eveniet nihil
             saepe totam quibusdam nobis eos vel, iste illo qui hic perferendis
@@ -51,8 +54,11 @@ function ApartmentPage() {
           </p>
         </div>
         <div className="apartment__details--equipment">
-          <p className="apartment__details--title">Équipements</p>
-          <p>
+          <div className="apartment__details--title">
+            <p>Équipements</p>
+            <i class="fa fa-solid fa-chevron-down"></i>
+          </div>
+          <p className="apartment__details--content">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
             nisi consectetur minima, provident debitis reiciendis eveniet nihil
             saepe totam quibusdam nobis eos vel, iste illo qui hic perferendis

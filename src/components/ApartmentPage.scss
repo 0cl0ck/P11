@@ -34,10 +34,12 @@
     font-weight: 300;
 
     p {
+      text-align: center;
       color: white;
       background-color: $color-primary;
       padding: 0.25rem 2rem;
       border-radius: 15px;
+      // Mettre un pourcentage pour la max width et width
     }
   }
 }
@@ -83,4 +85,11 @@
 
 .apartment__details {
   display: flex;
+
+  &--title {
+    display: flex;
+    i {
+      color: black;
+    }
+  }
 }

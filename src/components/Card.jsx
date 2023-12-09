@@ -6,9 +6,7 @@ function Card() {
   return (
     <>
       <Link to="/ApartmentPage" className="card__link">
-        <div className="card">
-          <span className="card__subtitle">Titre de la Location</span>
-        </div>
+        <span className="card__subtitle">Titre de la Location</span>
       </Link>
     </>
   );

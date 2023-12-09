@@ -2,10 +2,10 @@
   background-color: lightgray;
   border-radius: 1rem;
   padding: 2rem;
-  gap: 2rem;
+  gap: 3rem;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 @media screen and (max-width: 768px) {
