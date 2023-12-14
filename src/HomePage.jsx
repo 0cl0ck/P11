@@ -6,7 +6,10 @@ import "./HomePage.scss";
 function HomePage() {
   return (
     <>
-      <Banner />
+      <Banner
+        backgroundImage="/illustration-banner.webp"
+        title="Chez vous, partout et ailleurs"
+      />
       <LocationGrid />
     </>
   );
