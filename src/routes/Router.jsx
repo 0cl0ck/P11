@@ -4,18 +4,23 @@ import HomePage from "../HomePage.jsx";
 import Layout from "../layout/Layout.jsx";
 import ApartmentPage from "../components/ApartmentPage.jsx";
 import About from "../About.jsx";
+import NotFound from "../NotFound.jsx";
 
 const BrowserRouter = createBrowserRouter([
   {
     element: <Layout />,
-    errorElement: <h1>404</h1>,
+    errorElement: (
+      <Layout>
+        <NotFound />
+      </Layout>
+    ),
     children: [
       {
-        path: "/",
+        path: "/Home",
         element: <HomePage />,
       },
       {
-        path: "/about",
+        path: "/About",
         element: <About />,
       },
       {
@@ -24,7 +29,7 @@ const BrowserRouter = createBrowserRouter([
       },
       {
         path: "/404",
-        element: <HomePage />,
+        element: <NotFound />,
       },
     ],
   },

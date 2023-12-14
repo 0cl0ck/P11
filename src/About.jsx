@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.scss";
+import "./About.scss";
 import Banner from "./components/Banner.Jsx";
 import ApartmentDetails from "./components/ApartmentDetails";
 
