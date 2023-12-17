@@ -9,7 +9,11 @@ function ApartmentPage() {
     <div className="apartment__page">
       <ApartmentBanner />
       <ApartmentHeader />
-      <ApartmentDetails />
+
+      <div className="apartment__details">
+        <ApartmentDetails />
+        <ApartmentDetails />
+      </div>
     </div>
   );
 }
