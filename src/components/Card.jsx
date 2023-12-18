@@ -7,9 +7,16 @@ function Card(props) {
     backgroundImage: `url(${props.cover})`,
   };
 
+  const state = { id: props.id };
+
   return (
     <>
-      <Link to="/ApartmentPage" className="card__link" style={cardStyle}>
+      <Link
+        to="/ApartmentPage"
+        state={state}
+        className="card__link"
+        style={cardStyle}
+      >
         <span className="card__subtitle">{props.title}</span>
       </Link>
     </>

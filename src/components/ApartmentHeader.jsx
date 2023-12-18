@@ -1,33 +1,41 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function ApartmentHeader() {
+function ApartmentHeader({ title, location, tags, host, rating }) {
+  function generateRatingStars(rating) {
+    let stars = [];
+    for (let i = 0; i < 5; i++) {
+      stars.push(
+        <FontAwesomeIcon
+          key={i}
+          icon="star"
+          className={i < rating ? "full-star" : "empty-star"}
+        />
+      );
+    }
+    return stars;
+  }
+
   return (
     <div className="apartment__header">
       <div className="apartment__title">
-        <h1>Cozy loft on Canal Saint Martin</h1>
-        <h2>Paris, île de France</h2>
+        <h1>{title}</h1>
+        <h2>{location}</h2>
         <div className="tags">
-          <p>Cozy</p>
-          <p>Canal</p>
-          <p>Paris 10</p>
+          {tags.map((tag) => (
+            <p key={tag}>{tag}</p>
+          ))}
         </div>
       </div>
       <div className="apartment__landlord">
-        <div className="apartment__landlord--header">
-          <div className="apartment__landlord--name">
-            <p className="apartment__landlord--firstname">Alexandre </p>
-            <p className="apartment__landlord--lastname"> Dumas</p>
-          </div>
-          <div className="apartment__landlord--avatar">
-            <img src="grey.webp" alt="" />
-          </div>
+        <div className="apartment__landlord--name">
+          <p>{host.name}</p>
+        </div>
+        <div className="apartment__landlord--avatar">
+          <img src={host.picture} alt={host.name} />
         </div>
         <div className="apartment__landlord--rating">
-          <span>☆</span>
-          <span>☆</span>
-          <span>☆</span>
-          <span>☆</span>
-          <span>☆</span>
+          {generateRatingStars(rating)}
         </div>
       </div>
     </div>

@@ -1,19 +1,14 @@
 import React from "react";
 
-function ApartmentDetails() {
+function ApartmentDetails({ title, content }) {
   return (
     <div className="apartment__details--description">
       <div className="apartment__details--title">
-        <p>Description</p>
+        <p>{title}</p>
         <i className="fa fa-solid fa-chevron-down"></i>
       </div>
       <p className="apartment__details--content">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        nisi consectetur minima, provident debitis reiciendis eveniet nihil
-        saepe totam quibusdam nobis eos vel, iste illo qui hic perferendis
-        facere eum eaque porro? Incidunt soluta deleniti molestiae! Praesentium
-        tenetur aliquid temporibus possimus asperiores ab iure voluptatum
-        veniam, facilis nulla, nobis earum.
+        {Array.isArray(content) ? content.join(", ") : content}
       </p>
     </div>
   );

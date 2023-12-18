@@ -49,9 +49,9 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0; // Ajustez en fonction de l'espacement souhaité
+    bottom: 0;
     width: 100%;
-    height: 2px; // Épaisseur du trait de soulignement
-    background-color: $color-primary; // Utilise la couleur du texte du lien
+    height: 2px;
+    background-color: $color-primary;
   }
 }
