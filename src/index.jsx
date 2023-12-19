@@ -4,9 +4,15 @@ import Router from "./routes/Router.jsx";
 import "./index.scss";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronDown,
+  faChevronUp,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(faStar);
+library.add(faChevronDown);
+library.add(faChevronUp);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

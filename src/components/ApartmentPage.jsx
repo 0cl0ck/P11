@@ -2,7 +2,7 @@ import React from "react";
 import "./ApartmentPage.scss";
 import ApartmentBanner from "./ApartmentBanner";
 import ApartmentHeader from "./ApartmentHeader";
-import ApartmentDetails from "./ApartmentDetails";
+import InformationSection from "./InformationSection";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -35,11 +35,11 @@ function ApartmentPage() {
           />
 
           <div className="apartment__details">
-            <ApartmentDetails
+            <InformationSection
               title="Description"
               content={apartment.description}
             />
-            <ApartmentDetails
+            <InformationSection
               title="Equipements"
               content={apartment.equipments}
             />
