@@ -9,14 +9,10 @@ import NotFound from "../NotFound.jsx";
 const BrowserRouter = createBrowserRouter([
   {
     element: <Layout />,
-    errorElement: (
-      <Layout>
-        <NotFound />
-      </Layout>
-    ),
     children: [
       {
         path: "/",
+        index: true,
         element: <HomePage />,
       },
       {
@@ -29,6 +25,10 @@ const BrowserRouter = createBrowserRouter([
       },
       {
         path: "/404",
+        element: <NotFound />,
+      },
+      {
+        path: "*",
         element: <NotFound />,
       },
     ],
