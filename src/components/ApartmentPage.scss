@@ -147,3 +147,27 @@
 .empty-star {
   color: grey;
 }
+
+@media screen and (max-width: 426px) {
+  .apartment__details {
+    flex-direction: column;
+  }
+
+  .tags {
+    flex-wrap: wrap;
+  }
+
+  .apartment__header {
+    flex-direction: column;
+  }
+
+  .apartment__landlord {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    &--rating {
+      font-size: 1rem;
+    }
+  }
+}
