@@ -20,3 +20,9 @@
     opacity: 0.5;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .banner {
+    min-height: 110px;
+  }
+}

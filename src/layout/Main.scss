@@ -2,3 +2,9 @@
   max-width: 80vw;
   margin: 0 auto 3rem;
 }
+@media screen and (max-width: 426px) {
+  .main {
+    max-width: 100vh;
+    padding-inline: 1rem;
+  }
+}

@@ -7,13 +7,10 @@ function Card(props) {
     backgroundImage: `url(${props.cover})`,
   };
 
-  const state = { id: props.id };
-
   return (
     <>
       <Link
-        to="/ApartmentPage"
-        state={state}
+        to={`/apartment/${props.id}`}
         className="card__link"
         style={cardStyle}
       >

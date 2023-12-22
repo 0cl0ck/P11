@@ -7,17 +7,19 @@ function Navbar() {
     <nav className="navbar">
       <NavLink to="/">
         <div className="navbar__logo">
-          <img src="logo-kasa.png" alt="Logo" />
+          <img src="/logo-kasa.png" alt="Logo" />
         </div>
       </NavLink>
 
-      <NavLink to="/">
-        <div className="navbar__link">Accueil</div>
-      </NavLink>
+      <div className="navbar__links">
+        <NavLink to="/">
+          <div className="navbar__link">Accueil</div>
+        </NavLink>
 
-      <NavLink to="/about">
-        <div className="navbar__link">À propos</div>
-      </NavLink>
+        <NavLink to="/about">
+          <div className="navbar__link">À propos</div>
+        </NavLink>
+      </div>
     </nav>
   );
 }

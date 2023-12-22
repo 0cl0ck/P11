@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Carousel({ images }) {
@@ -15,6 +15,23 @@ function Carousel({ images }) {
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowLeft") {
+        goToPrevious();
+      } else if (event.key === "ArrowRight") {
+        goToNext();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Nettoyage de l'écouteur d'événements
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [goToNext, goToPrevious]);
 
   return (
     <div className="carousel">

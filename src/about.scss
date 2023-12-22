@@ -1,0 +1,11 @@
+.about__infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 426px) and (max-width: 2561px) {
+  .about__infoSection {
+    margin: 2rem 4rem;
+  }
+}

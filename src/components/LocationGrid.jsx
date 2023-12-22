@@ -14,6 +14,8 @@ function LocationGrid() {
       .catch((error) => console.error(error));
   }
 
+  //Todo: renommer card en + spécifique
+
   return (
     <div className="location-grid">
       {apartments.map((apartment) => (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 import Banner from "./components/Banner.Jsx";
-import InformationSection from "./components/InformationSection"; // Renommé
+import InformationSection from "./components/InformationSection";
 
 const infoSections = [
   {
@@ -33,13 +33,16 @@ function About() {
         backgroundImage="/illustration-banner-about.webp"
         title="Chez vous, partout et ailleurs"
       />
-      {infoSections.map((section, index) => (
-        <InformationSection
-          key={index}
-          title={section.title}
-          content={section.content}
-        />
-      ))}
+
+      <div className="about__infoSection">
+        {infoSections.map((section, index) => (
+          <InformationSection
+            key={index}
+            title={section.title}
+            content={section.content}
+          />
+        ))}
+      </div>
     </>
   );
 }

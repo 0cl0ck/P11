@@ -12,6 +12,19 @@
      Etoile signifie tout, n'importe quel élément ) l'intérieur de la navbar qui est first child
      le chevron > est là pour spécifier qu'on parle seulement de l'enfant direct de navbar, pas aux petits enfants*/
     margin-right: auto;
+    max-width: 100%; /* Assure que le logo ne dépasse jamais la largeur de son conteneur */
+    height: auto;
+  }
+
+  &__logo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
   }
 
   a {
@@ -20,6 +33,9 @@
     position: relative;
 
     .navbar__link {
+      white-space: nowrap;
+      flex-grow: 1;
+      flex-basis: 0;
       &::before {
         content: "";
         position: absolute;
@@ -53,5 +69,12 @@
     width: 100%;
     height: 2px;
     background-color: $color-primary;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 2561px) {
+  .navbar {
+    margin: 0 auto;
+    max-width: 80vw;
   }
 }

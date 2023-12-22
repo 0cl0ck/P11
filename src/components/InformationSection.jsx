@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./InformationSection.scss";
 
 function InformationSection({ title, content }) {
   const [isExpanded, setIsExpanded] = React.useState(false);
@@ -11,11 +12,11 @@ function InformationSection({ title, content }) {
         <p>{title}</p>
         <FontAwesomeIcon
           onClick={toggleExpand}
-          icon={isExpanded ? "chevron-up" : "chevron-down"}
+          icon={isExpanded ? "chevron-down" : "chevron-up"}
         />
       </div>
-      {isExpanded &&
-        (Array.isArray(content) ? (
+      <div className={isExpanded ? "content expanded" : "content"}>
+        {Array.isArray(content) ? (
           <ul className="information__section--list">
             {content.map((item, index) => (
               <li key={index}>{item}</li>
@@ -23,7 +24,8 @@ function InformationSection({ title, content }) {
           </ul>
         ) : (
           <p className="information__section--content">{content}</p>
-        ))}
+        )}
+      </div>
     </div>
   );
 }
