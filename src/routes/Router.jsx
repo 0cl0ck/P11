@@ -1,8 +1,8 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "../HomePage.jsx";
+import HomePage from "../pages/HomePage.jsx";
 import Layout from "../layout/Layout.jsx";
-import ApartmentPage from "../components/ApartmentPage.jsx";
+import ApartmentPage from "../pages/ApartmentPage.jsx";
 import About from "../About.jsx";
 import NotFound from "../NotFound.jsx";
 

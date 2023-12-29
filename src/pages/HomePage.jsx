@@ -1,7 +1,8 @@
 import React from "react";
-import Banner from "./components/Banner.Jsx";
-import LocationGrid from "./components/LocationGrid.jsx";
+import Banner from "../components/Banner.Jsx";
+import LocationGrid from "../components/LocationGrid.jsx";
 import "./HomePage.scss";
+import "../components/Banner.scss";
 
 function HomePage() {
   return (

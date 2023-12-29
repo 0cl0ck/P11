@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./ApartmentPage.scss";
-import "./carousel.scss";
-import ApartmentHeader from "./ApartmentHeader";
-import InformationSection from "./InformationSection";
-import Carousel from "./Carousel.jsx";
+import "../components/Carousel.scss";
+import ApartmentHeader from "../components/ApartmentHeader.jsx";
+import InformationSection from "../components/InformationSection.jsx";
+import Carousel from "../components/Carousel.jsx";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
