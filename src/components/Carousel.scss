@@ -29,6 +29,20 @@
   }
 }
 
+.carousel__pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1em;
+
+  // background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent (accessibilité) */
+  // border-radius: 5px;
+}
+
 @media screen and (max-width: 426px) {
   .carousel img {
     height: 300px;
