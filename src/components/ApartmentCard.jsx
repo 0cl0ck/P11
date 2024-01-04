@@ -1,10 +1,10 @@
 import React from "react";
-import "./Card.scss";
+import "./ApartmentCard.scss";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-function Card(props) {
-  const cardStyle = {
+function ApartmentCard(props) {
+  const ApartmentCardStyle = {
     backgroundImage: `url(${props.cover})`,
   };
 
@@ -12,17 +12,17 @@ function Card(props) {
     <>
       <Link
         to={`/apartment/${props.id}`}
-        className="card__link"
-        style={cardStyle}
+        className="ApartmentCard__link"
+        style={ApartmentCardStyle}
       >
-        <span className="card__subtitle">{props.title}</span>
+        <span className="ApartmentCard__subtitle">{props.title}</span>
       </Link>
     </>
   );
 }
-Card.propTypes = {
+ApartmentCard.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   cover: PropTypes.string.isRequired,
 };
-export default Card;
+export default ApartmentCard;

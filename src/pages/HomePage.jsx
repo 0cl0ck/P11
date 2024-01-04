@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner.Jsx";
-import LocationGrid from "../components/LocationGrid.jsx";
+import ApartmentGrid from "../components/ApartmentGrid.jsx";
 import "./HomePage.scss";
 import "../components/Banner.scss";
 
@@ -11,7 +11,7 @@ function HomePage() {
         backgroundImage="/illustration-banner.webp"
         title="Chez vous, partout et ailleurs"
       />
-      <LocationGrid />
+      <ApartmentGrid />
     </>
   );
 }

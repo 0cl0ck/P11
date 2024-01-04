@@ -1,4 +1,4 @@
-.location-grid {
+.apartment-grid {
   background-color: lightgray;
   border-radius: 1rem;
   padding: 2rem;
@@ -10,24 +10,24 @@
 }
 
 @media screen and (min-width: 1441px) and (max-width: 2561px) {
-  .location-grid {
+  .apartment-grid {
     padding: 3rem 2rem;
   }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1441px) {
-  .location-grid {
+  .apartment-grid {
     padding: 3rem 2rem;
   }
 }
 
 @media screen and (max-width: 1025px) {
-  .location-grid {
+  .apartment-grid {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 769px) {
-  .location-grid {
+  .apartment-grid {
     justify-content: center;
     padding: 0;
     flex-direction: column;
@@ -36,7 +36,7 @@
 }
 
 @media screen and (max-width: 426px) {
-  .location-grid {
+  .apartment-grid {
     padding: 0;
   }
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import "./LocationGrid.scss";
-import Card from "./Card.jsx";
+import "./ApartmentGrid.scss";
+import ApartmentCard from "./ApartmentCard.jsx";
 import { useState, useEffect } from "react";
 
-function LocationGrid() {
+function ApartmentGrid() {
   const [apartments, setApartments] = useState([]);
   useEffect(fetchApartments, []);
 
@@ -14,12 +14,12 @@ function LocationGrid() {
       .catch((error) => console.error(error));
   }
 
-  //Todo: renommer card en + spécifique
+  //Todo: renommer ApartmentCard en + spécifique
 
   return (
-    <div className="location-grid">
+    <div className="apartment-grid">
       {apartments.map((apartment) => (
-        <Card
+        <ApartmentCard
           key={apartment.id}
           id={apartment.id}
           title={apartment.title}
@@ -30,4 +30,4 @@ function LocationGrid() {
   );
 }
 
-export default LocationGrid;
+export default ApartmentGrid;
