@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.scss";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function Card(props) {
   const cardStyle = {
@@ -19,5 +20,9 @@ function Card(props) {
     </>
   );
 }
-
+Card.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
+};
 export default Card;

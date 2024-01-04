@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./InformationSection.scss";
+import PropTypes from "prop-types";
 
 function InformationSection({ title, content }) {
   const [isExpanded, setIsExpanded] = React.useState(false);
@@ -29,5 +30,13 @@ function InformationSection({ title, content }) {
     </div>
   );
 }
+
+InformationSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]),
+};
 
 export default InformationSection;

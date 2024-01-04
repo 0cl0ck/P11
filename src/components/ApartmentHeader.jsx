@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 
 function ApartmentHeader({ title, location, tags, host, rating }) {
   //Permets de séparer le nom et le prénom du propriétaire
@@ -49,5 +50,12 @@ function ApartmentHeader({ title, location, tags, host, rating }) {
     </div>
   );
 }
+ApartmentHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
+  host: PropTypes.object.isRequired,
+  rating: PropTypes.number.isRequired,
+};
 
 export default ApartmentHeader;

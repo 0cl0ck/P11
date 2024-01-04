@@ -9,7 +9,7 @@ function NotFound() {
         <h1>404</h1>
         <p>Oups! La page que vous demandez n&apos;existe pas.</p>
         <Link to="/Home" className="home-link">
-          Retourner sur la page d'accueil
+          Retourner sur la page d&apos;accueil
         </Link>
       </div>
     </div>

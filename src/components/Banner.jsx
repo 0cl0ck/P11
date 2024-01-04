@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.scss";
+import PropTypes from "prop-types";
 
 function Banner({ backgroundImage, title }) {
   const style = {
@@ -12,5 +13,9 @@ function Banner({ backgroundImage, title }) {
     </div>
   );
 }
+Banner.propTypes = {
+  title: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string.isRequired,
+};
 
 export default Banner;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 
 function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -65,5 +66,8 @@ function Carousel({ images }) {
     </div>
   );
 }
+Carousel.propTypes = {
+  images: PropTypes.array.isRequired,
+};
 
 export default Carousel;
