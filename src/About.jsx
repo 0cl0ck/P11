@@ -2,6 +2,7 @@ import React from "react";
 import "./About.scss";
 import Banner from "./components/Banner.Jsx";
 import InformationSection from "./components/InformationSection";
+import { useEffect } from "react";
 
 const infoSections = [
   {
@@ -27,12 +28,18 @@ const infoSections = [
 ];
 
 function About() {
+  useEffect(() => {
+    const root = document.getElementById("root");
+    root.classList.add("about-page");
+
+    return () => {
+      root.classList.remove("about-page");
+    };
+  }, []); // Le tableau vide signifie que cet effet ne s'exécutera que lorsque le composant est monté ou démonté
+
   return (
     <>
-      <Banner
-        backgroundImage="/illustration-banner-about.webp"
-        title="Chez vous, partout et ailleurs"
-      />
+      <Banner backgroundImage="/illustration-banner-about.webp" title="" />
 
       <div className="about__infoSection">
         {infoSections.map((section, index) => (

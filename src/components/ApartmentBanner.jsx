@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function ApartmentBanner({ cover }) {
   return (
@@ -7,5 +8,8 @@ function ApartmentBanner({ cover }) {
     </div>
   );
 }
+ApartmentBanner.propTypes = {
+  cover: PropTypes.string.isRequired,
+};
 
 export default ApartmentBanner;

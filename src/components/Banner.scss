@@ -24,5 +24,9 @@
 @media screen and (max-width: 426px) {
   .banner {
     min-height: 110px;
+    justify-items: start;
+    h2 {
+      width: 13rem;
+    }
   }
 }
