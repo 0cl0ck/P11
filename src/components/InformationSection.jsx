@@ -2,10 +2,24 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./InformationSection.scss";
 import PropTypes from "prop-types";
+import { useState, useEffect, useRef } from "react";
 
 function InformationSection({ title, content }) {
-  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const contentRef = useRef(null);
+  const [maxHeight, setMaxHeight] = useState(0);
+
   const toggleExpand = () => setIsExpanded(!isExpanded);
+
+  useEffect(() => {
+    const adjustMaxHeight = () => {
+      setMaxHeight(isExpanded ? contentRef.current.scrollHeight : 0);
+    };
+
+    adjustMaxHeight();
+    window.addEventListener("resize", adjustMaxHeight);
+    return () => window.removeEventListener("resize", adjustMaxHeight);
+  }, [isExpanded, content]);
 
   return (
     <div className="information__section--description">
@@ -16,7 +30,11 @@ function InformationSection({ title, content }) {
           icon={isExpanded ? "chevron-down" : "chevron-up"}
         />
       </div>
-      <div className={isExpanded ? "content expanded" : "content"}>
+      <div
+        ref={contentRef}
+        className={`content ${isExpanded ? "expanded" : ""}`}
+        style={{ maxHeight: `${maxHeight}px` }}
+      >
         {Array.isArray(content) ? (
           <ul className="information__section--list">
             {content.map((item, index) => (
