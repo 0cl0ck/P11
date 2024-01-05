@@ -17,6 +17,7 @@ function Banner({ backgroundImage, title, additionalStyle }) {
 Banner.propTypes = {
   title: PropTypes.string.isRequired,
   backgroundImage: PropTypes.string.isRequired,
+  additionalStyle: PropTypes.object,
 };
 
 export default Banner;
