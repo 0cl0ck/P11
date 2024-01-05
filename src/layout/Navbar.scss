@@ -38,6 +38,13 @@
     .navbar__link {
       white-space: nowrap;
       font-weight: 500;
+      font-size: 24px;
+      @media screen and (max-width: 426px) {
+        font-size: 12px;
+      }
+      @media screen and (min-width: 427px) and (max-width: 768px) {
+        font-size: 16px;
+      }
 
       &::before {
         content: "";

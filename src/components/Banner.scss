@@ -2,7 +2,7 @@
   position: relative;
   max-width: 80vw;
   padding-inline: 2rem;
-  min-height: 140px;
+  min-height: 223px;
   margin: auto;
   margin-bottom: 2rem;
   border-radius: 1rem;
@@ -29,9 +29,12 @@
     position: relative;
     z-index: 2;
     font-weight: 100;
-
-    @media screen and (min-width: 1024px) {
-      letter-spacing: 2px;
+    font-size: 48px;
+    @media screen and (max-width: 426px) {
+      font-size: 24px;
+    }
+    @media screen and (min-width: 427px) and (max-width: 768px) {
+      font-size: 32px;
     }
   }
 
@@ -39,6 +42,7 @@
     min-height: 110px;
     justify-content: flex-start;
     background-size: 225% auto;
+    height: 111px;
 
     h2 {
       width: 12rem;
