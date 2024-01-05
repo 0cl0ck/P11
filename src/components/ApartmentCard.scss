@@ -20,8 +20,16 @@
     border-radius: 0.75rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     text-decoration: none;
-    width: 30%;
     background-size: cover;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .ApartmentCard__link {
+    flex-grow: 1;
+    flex-basis: calc(33.333% - 3rem);
+    min-width: 250px;
     height: 340px;
   }
 }

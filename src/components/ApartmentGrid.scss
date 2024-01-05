@@ -1,16 +1,11 @@
 .apartment-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+  justify-content: flex-start;
   background-color: lightgray;
   border-radius: 1rem;
-  padding: 2rem;
-  gap: 3rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  @media screen and (min-width: 1025px) {
-    padding: 3rem 2rem;
-  }
 
   @media screen and (max-width: 1025px) {
     flex-direction: column;

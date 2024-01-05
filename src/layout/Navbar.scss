@@ -37,14 +37,13 @@
 
     .navbar__link {
       white-space: nowrap;
-      flex-grow: 1;
-      flex-basis: 0;
+      font-weight: 500;
 
       &::before {
         content: "";
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 1px;
         border-radius: 4px;
         background-color: $color-primary;
         bottom: 0;
@@ -70,8 +69,26 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 2px;
+      height: 1px;
       background-color: $color-primary;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar__link {
+    text-transform: uppercase; /* Majuscules */
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .navbar__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar__link {
+    text-transform: capitalize; /* Majuscules */
   }
 }
