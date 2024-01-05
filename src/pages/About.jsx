@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
-import Banner from "./components/Banner.Jsx";
-import InformationSection from "./components/InformationSection";
+import Banner from "../components/Banner.Jsx";
+import InformationSection from "../components/InformationSection";
 import { useEffect } from "react";
 
 const infoSections = [
@@ -39,7 +39,11 @@ function About() {
 
   return (
     <>
-      <Banner backgroundImage="/illustration-banner-about.webp" title="" />
+      <Banner
+        backgroundImage="/illustration-banner-about.webp"
+        title=""
+        additionalStyle={{ backgroundSize: "cover" }}
+      />
 
       <div className="about__infoSection">
         {infoSections.map((section, index) => (

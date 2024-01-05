@@ -1,9 +1,30 @@
 .footer {
   background-color: black;
   color: white;
-  padding: 20px;
+  padding-top: 2rem;
   text-align: center;
   min-height: 125px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  &__text {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .footer {
+    gap: 0.5rem;
+    padding-top: 0;
+    padding: 20px;
+    min-height: 250px;
+
+    &__text {
+      font-size: 12px;
+    }
+  }
 }

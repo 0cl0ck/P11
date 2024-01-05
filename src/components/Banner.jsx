@@ -2,9 +2,10 @@ import React from "react";
 import "./Banner.scss";
 import PropTypes from "prop-types";
 
-function Banner({ backgroundImage, title }) {
+function Banner({ backgroundImage, title, additionalStyle }) {
   const style = {
     backgroundImage: `url(${backgroundImage})`,
+    ...additionalStyle,
   };
 
   return (

@@ -14,8 +14,6 @@ function ApartmentGrid() {
       .catch((error) => console.error(error));
   }
 
-  //Todo: renommer ApartmentCard en + spécifique
-
   return (
     <div className="apartment-grid">
       {apartments.map((apartment) => (
