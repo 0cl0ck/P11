@@ -35,8 +35,7 @@ function About() {
     return () => {
       root.classList.remove("about-page");
     };
-  }, []); // Le tableau vide signifie que cet effet ne s'exécutera que lorsque le composant est monté ou démonté
-
+  }, []);
   return (
     <>
       <Banner

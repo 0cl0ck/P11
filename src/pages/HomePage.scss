@@ -1,5 +1,17 @@
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  // Ceci garantit que le main se développe pour occuper l'espace disponible.
+  // Mais il doit avoir une hauteur minimale pour s'étendre s'il n'y a pas assez de contenu.
+  min-height: calc(100vh - 200px - 125px);
 }

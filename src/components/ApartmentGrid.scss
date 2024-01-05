@@ -7,36 +7,23 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-}
 
-@media screen and (min-width: 1441px) and (max-width: 2561px) {
-  .apartment-grid {
+  @media screen and (min-width: 1025px) {
     padding: 3rem 2rem;
   }
-}
 
-@media screen and (min-width: 1025px) and (max-width: 1441px) {
-  .apartment-grid {
-    padding: 3rem 2rem;
-  }
-}
-
-@media screen and (max-width: 1025px) {
-  .apartment-grid {
+  @media screen and (max-width: 1025px) {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 769px) {
-  .apartment-grid {
+
+  @media screen and (max-width: 769px) {
     justify-content: center;
     padding: 0;
     flex-direction: column;
     background-color: white;
   }
-}
 
-@media screen and (max-width: 426px) {
-  .apartment-grid {
+  @media screen and (max-width: 426px) {
     padding: 0;
   }
 }

@@ -10,7 +10,6 @@
     width: 50%;
     position: absolute;
     bottom: 0;
-
     margin-block-end: 1rem;
     margin-inline-start: 1rem;
   }
@@ -47,10 +46,12 @@
   .ApartmentCard {
     flex-basis: 100%;
   }
+
   .ApartmentCard__link {
     width: 100%;
     height: 280px;
   }
+
   .ApartmentCard__subtitle {
     font-size: 18px;
   }

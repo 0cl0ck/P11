@@ -7,6 +7,10 @@
     object-fit: cover;
     display: block;
     border-radius: 15px;
+
+    @media screen and (max-width: 426px) {
+      height: 300px;
+    }
   }
 
   .carousel__chevrons {
@@ -26,6 +30,10 @@
     &:last-child {
       right: 10px;
     }
+
+    @media screen and (max-width: 426px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -38,17 +46,7 @@
   color: white;
   padding: 5px 10px;
   font-size: 1em;
-
-  // background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent (accessibilité) */
+  // Utilisez les commentaires suivants si nécessaire pour le fond et la bordure
+  // background: rgba(0, 0, 0, 0.5);
   // border-radius: 5px;
-}
-
-@media screen and (max-width: 426px) {
-  .carousel img {
-    height: 300px;
-  }
-
-  .carousel .carousel__chevrons {
-    font-size: 2rem;
-  }
 }

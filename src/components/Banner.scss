@@ -1,10 +1,10 @@
 .banner {
   position: relative;
-  max-width: 100vw;
+  max-width: 80vw;
   padding-inline: 2rem;
   min-height: 140px;
-  max-width: 80vw;
   margin: auto;
+  margin-bottom: 2rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
@@ -12,32 +12,34 @@
   color: white;
   background-position: center;
   background-size: cover;
-  margin-bottom: 2rem;
-}
 
-.banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.25);
-  z-index: 1;
-  border-radius: 1rem;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    border-radius: 1rem;
+  }
 
-.banner h2 {
-  position: relative;
-  z-index: 2;
-  font-weight: 100;
-}
-@media screen and (max-width: 426px) {
-  .banner {
+  h2 {
+    position: relative;
+    z-index: 2;
+    font-weight: 100;
+
+    @media screen and (min-width: 1024px) {
+      letter-spacing: 2px;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
     min-height: 110px;
-    justify-items: start;
-    background-size: 225% auto;
     justify-content: flex-start;
+    background-size: 225% auto;
+
     h2 {
       width: 12rem;
     }
@@ -47,9 +49,5 @@
 @media screen and (min-width: 1024px) {
   .banner {
     font-size: 20px;
-
-    h2 {
-      letter-spacing: 2px;
-    }
   }
 }
