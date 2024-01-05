@@ -76,7 +76,7 @@
 }
 @media screen and (max-width: 768px) {
   .navbar__link {
-    text-transform: uppercase; /* Majuscules */
+    text-transform: uppercase;
     font-size: 14px;
   }
 }
@@ -89,6 +89,6 @@
 
 @media screen and (min-width: 769px) {
   .navbar__link {
-    text-transform: capitalize; /* Majuscules */
+    text-transform: capitalize;
   }
 }
