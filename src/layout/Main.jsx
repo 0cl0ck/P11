@@ -1,5 +1,4 @@
 import React from "react";
-import "./Main.scss";
 import PropTypes from "prop-types";
 
 function Main({ children }) {

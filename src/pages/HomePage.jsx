@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner.Jsx";
 import ApartmentGrid from "../components/ApartmentGrid.jsx";
-import "./HomePage.scss";
 import "../components/Banner.scss";
 
 function HomePage() {
