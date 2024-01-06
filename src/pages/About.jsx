@@ -2,7 +2,6 @@ import React from "react";
 import "./About.scss";
 import Banner from "../components/Banner.Jsx";
 import InformationSection from "../components/InformationSection";
-import { useEffect } from "react";
 
 const infoSections = [
   {
@@ -28,14 +27,6 @@ const infoSections = [
 ];
 
 function About() {
-  useEffect(() => {
-    const root = document.getElementById("root");
-    root.classList.add("about-page");
-
-    return () => {
-      root.classList.remove("about-page");
-    };
-  }, []);
   return (
     <>
       <Banner
